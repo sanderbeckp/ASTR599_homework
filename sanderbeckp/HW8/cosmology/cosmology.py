@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 #%%file cosmology.py
+=======
+>>>>>>> 03749cc8c76066974d9fc99a7bf0963e4e82b7f8
 import numpy as np
 from scipy import integrate
 
@@ -27,7 +30,11 @@ class Cosmology(object):
     def _Einv(self, z):
         # implement the inverse of Eqn 14. This is the function that will be
         # integrated in order to compute other quantities
+<<<<<<< HEAD
 	return 1./(self.OmegaM*(1+z)**3.+self.OmegaK*(1+z)**2.+self.OmegaL)**(0.5)      
+=======
+	return 1./(self.OmegaM*(1+z)**3.+self.OmegaK*(1+z)**2.+self.OmegaL)**(0.5)       
+>>>>>>> 03749cc8c76066974d9fc99a7bf0963e4e82b7f8
 	
 
     def DC(self, z):
@@ -76,4 +83,8 @@ class Cosmology(object):
         Input z
         """
         # Compute the distance modulus (Eqn 25)
+<<<<<<< HEAD
 	return 5.*np.log10(1000000.*self.DL(z)/10.)
+=======
+	return 5.*numpy.log10(self.DL(z)/10.)
+>>>>>>> 03749cc8c76066974d9fc99a7bf0963e4e82b7f8

@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 #%%file test_cosmology.py
+=======
+>>>>>>> 03749cc8c76066974d9fc99a7bf0963e4e82b7f8
 """Tests of the Cosmology class"""
 from numpy.testing import assert_allclose
 from .. import Cosmology
